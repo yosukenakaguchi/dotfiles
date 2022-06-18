@@ -38,6 +38,9 @@ disabled = true
 [ruby]
 disabled = true
 
+[package]
+disabled = true
+
 [git_status]
 style = "bold white"
 conflicted = " 💥 "
@@ -49,5 +52,22 @@ untracked = " 🛸 "
 stashed = " 🌞 "
 modified = " 👾 "
 staged = '[++\($count\)](green)'
-renamed = " 🌑 "
+renamed = " 🌚 "
 deleted = " 🗑 "
+
+[battery]
+full_symbol = "🌕 "
+charging_symbol = "🌔 "
+discharging_symbol = "🌓 "
+unknown_symbol = "🪐 "
+empty_symbol = "🌑 "
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+discharging_symbol = "🌘 "
+
+[[battery.display]]
+threshold = 20
+style = "bold red"
+discharging_symbol = "🌘"
