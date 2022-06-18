@@ -37,3 +37,17 @@ disabled = true
 
 [ruby]
 disabled = true
+
+[git_status]
+style = "bold white"
+conflicted = " 💥 "
+ahead = " 🏎💨 "
+behind = " 💨 "
+diverged = " 🚀 "
+up_to_date = " 🌝 "
+untracked = " 🛸 "
+stashed = " 🌞 "
+modified = " 🛰 "
+staged = '[++\($count\)](green)'
+renamed = " 🌑 "
+deleted = " 🗑 "
