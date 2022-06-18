@@ -45,7 +45,7 @@ if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]
 fi
 
 function peco-cdr () {
-  local selected_dir="$(cdr -l | sed 's/^[0-9]\+ \+//' | peco --prompt="cdr >" --query "$LBUFFER")"
+  local selected_dir="$(cdr -l | sed 's/^[0-9]\+ \+//' | peco --prompt="cdr >" --layout top-down --query "$LBUFFER")"
   if [ -n "$selected_dir" ]; then
     BUFFER="cd `echo $selected_dir | awk '{print$2}'`"
     CURSOR=$#BUFFER

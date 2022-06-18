@@ -13,9 +13,8 @@ setopt inc_append_history      # to save every command
 setopt hist_reduce_blanks      # remove duplicate spaces
 
 function peco-select-history() {
-  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
+  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER" --layout top-down)
   CURSOR=$#BUFFER
-  zle clear-screen
 }
 zle -N peco-select-history
 bindkey '^R' peco-select-history
