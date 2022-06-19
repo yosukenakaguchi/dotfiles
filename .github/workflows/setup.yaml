@@ -3,6 +3,7 @@ name: Installation and Setup Check
 
 on:
   push:
+    branches: [ main ]
 
 jobs:
   installation-and-setup-check:
