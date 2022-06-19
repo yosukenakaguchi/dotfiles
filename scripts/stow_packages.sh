@@ -21,7 +21,7 @@ ensure_dir() {
 }
 
 HOME_DIR=$HOME
-STOW_PACKAGES_PATH="$HOME_DIR"/dotfiles/packages
+STOW_PACKAGES_PATH="$(cd "$(dirname "$0")" && cd ../packages && pwd)"
 
 # TODO:create -u unlink option
 
