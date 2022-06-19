@@ -11,11 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # no support for M1 arm64, so skip make initialize
-      # - name: check initialization
-        # run: make initialize
-
-      - name: check brew tab, brew and cask package installation
+      - name: check brew tap, brew and cask package installation
         run: make brew-bundle
 
       - name: check asdf plugins installation
