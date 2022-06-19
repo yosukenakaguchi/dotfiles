@@ -70,4 +70,4 @@ discharging_symbol = "🌘 "
 [[battery.display]]
 threshold = 20
 style = "bold red"
-discharging_symbol = "🌘"
+discharging_symbol = "🌘 "
