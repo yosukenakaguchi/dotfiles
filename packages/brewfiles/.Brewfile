@@ -30,6 +30,7 @@ brew "tmux"
 brew "tree"
 brew "zsh-completions"
 brew "zstd"
+
 cask "1password"
 cask "alfred"
 cask "android-studio"
