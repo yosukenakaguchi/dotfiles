@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
       - name: check brew tap, brew and cask package installation
         run: make brew-bundle-ci
 
