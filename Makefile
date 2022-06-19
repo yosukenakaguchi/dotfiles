@@ -14,6 +14,11 @@ brew-bundle:
 brew-bundle-mas:
 	brew bundle install --verbose --no-lock --file=./packages/brewfiles/.Brewfile.mas
 
+.PHONY: brew-bundle-ci
+brew-bundle-ci:
+	grep -Ev "awscli|cocoapods" ./packages/brewfiles/.Brewfile > ./packages/brewfiles/.Brewfile.ci
+	brew bundle --verbose --no-lock --file=./packages/brewfiles/.Brewfile.ci
+
 .PHONY: asdf-plugins
 asdf-plugins:
 	@./scripts/asdf_plugins.sh

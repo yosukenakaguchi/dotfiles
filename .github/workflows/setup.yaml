@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: check brew tap, brew and cask package installation
-        run: make brew-bundle
+        run: make brew-bundle-ci
 
       - name: check asdf plugins installation
         run: make asdf-plugins
