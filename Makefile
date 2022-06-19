@@ -1,6 +1,6 @@
 PHONY: all
 all:
-	initialize brew-bundle brew-bundle-mas asdf-plugins stow-packages
+	initialize brew-bundle brew-bundle-mas stow-packages asdf-plugins
 
 PHONY: initialize
 initialize:
@@ -19,12 +19,12 @@ brew-bundle-ci:
 	grep -Ev "awscli|cocoapods" ./packages/brewfiles/.Brewfile > ./packages/brewfiles/.Brewfile.ci
 	brew bundle --verbose --no-lock --file=./packages/brewfiles/.Brewfile.ci
 
-.PHONY: asdf-plugins
-asdf-plugins:
-	@./scripts/asdf_plugins.sh
-
 .PHONY: stow-packages
 stow-packages:
 	@echo	"------------Start updating dotfiles symbolic link.------------"
 	@./scripts/stow_packages.sh
 	@echo "--------------------Finished Successfully.--------------------"
+
+.PHONY: asdf-plugins
+asdf-plugins:
+	@./scripts/asdf_plugins.sh
