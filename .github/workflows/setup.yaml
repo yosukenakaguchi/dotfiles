@@ -1,0 +1,24 @@
+
+name: Installation and Setup Check
+
+on:
+  push:
+
+jobs:
+  installation-and-setup-check:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: check initialization
+        run: make initialize
+
+      - name: check brew tab, brew and cask package installation
+        run: make brew-bundle
+
+      - name: check asdf plugins installation
+        run: make asdf-plugins
+
+      - name: check symbolic linking
+        run: make stow-packages
