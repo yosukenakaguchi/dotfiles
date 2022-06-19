@@ -13,7 +13,7 @@ if [ "$(uname)" != "Darwin" ]; then
   exit 1
 fi
 
-if [ "$(uname -m)" != "Darwin" ]; then
+if [ "$(uname -m)" != "arm64" ]; then
   echo "Not arm64!"
   exit 1
 fi
