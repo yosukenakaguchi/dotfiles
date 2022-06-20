@@ -8,7 +8,6 @@ show_always = true
 [character]
 success_symbol = "[>](bold green)"
 error_symbol = "[x](bold red)"
-vicmd_symbol = "[<](bold green)"
 
 [directory]
 truncation_length = 100

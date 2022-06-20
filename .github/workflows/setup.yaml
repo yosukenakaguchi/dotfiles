@@ -1,9 +1,8 @@
-
 name: Installation and Setup Check
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   installation-and-setup-check:
