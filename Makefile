@@ -1,6 +1,6 @@
 PHONY: all
 all:
-	initialize brew-bundle brew-bundle-mas stow-packages asdf-plugins
+	initialize brew-bundle brew-bundle-mas stow-packages asdf-plugins @cmatrix
 
 PHONY: initialize
 initialize:
