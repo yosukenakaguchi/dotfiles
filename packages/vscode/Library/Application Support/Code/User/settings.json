@@ -1,0 +1,34 @@
+{
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "block",
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": [
+    "source.organizeImports",
+    "source.fixAll.eslint"
+  ],
+  "shellcheck.executablePath": "/Users/ynakaguchi/dotfiles/scripts/shellcheck.sh",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "settingsSync.ignoredSettings": [
+    "-shellcheck.executablePath"
+  ],
+  "[properties]": {
+    "editor.formatOnSave": false,
+  },
+  "ruby.intellisense": "rubyLocate",
+  "ruby.codeCompletion": "rcodetools",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Nord",
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.revealCursorScrollLine": false,
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/ynakaguchi/.config/nvim/init.vim",
+  "window.zoomLevel": 2,
+}
