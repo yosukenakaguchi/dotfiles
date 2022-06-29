@@ -5,7 +5,9 @@
 
 This dotfiles for macOS are managed with [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle), [GNU stow](https://www.gnu.org/software/stow/) and [asdf](https://asdf-vm.com/).
 
-Shell is Z shell and terminal is [Alacritty](https://alacritty.org/) with [tmux](https://github.com/tmux/tmux) and [Starship](https://starship.rs/).
+- Shell: Z shell
+- Terminal: [Alacritty](https://alacritty.org/) with [tmux](https://github.com/tmux/tmux) and [Starship](https://starship.rs/)
+- Editor: [VSCode](https://azure.microsoft.com/en-us/products/visual-studio-code/) with [VSCode Neovim](https://github.com/vscode-neovim/vscode-neovim)
 
 ## Installation
 
