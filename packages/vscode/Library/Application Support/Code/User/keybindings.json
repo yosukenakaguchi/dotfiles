@@ -1,5 +1,4 @@
 [
-  // tmuxlike
   {
     "key": "ctrl+a h",
     "command": "workbench.action.focusLeftGroup",
@@ -49,6 +48,12 @@
     "key": "ctrl+h",
     "command": "workbench.action.focusFirstEditorGroup",
     "when": "!editorFocus"
+  },
+  {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
   },
   {
     "key": "Enter",
