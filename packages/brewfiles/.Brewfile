@@ -30,6 +30,7 @@ brew "terminal-notifier"
 brew "tig"
 brew "tmux"
 brew "tree"
+brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zstd"
 
