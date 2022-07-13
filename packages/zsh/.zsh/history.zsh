@@ -11,6 +11,7 @@ export SAVEHIST=20000          # save history counts
 setopt hist_ignore_all_dups    # ignore duplicate command
 setopt inc_append_history      # to save every command
 setopt hist_reduce_blanks      # remove duplicate spaces
+setopt share_history           # share history between processes
 
 function peco-select-history() {
   BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER" --layout top-down)
