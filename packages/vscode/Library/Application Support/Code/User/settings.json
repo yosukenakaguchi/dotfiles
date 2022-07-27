@@ -23,17 +23,16 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Tokyo Night",
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "vscode-neovim.revealCursorScrollLine": false,
   "vscode-neovim.neovimInitVimPaths.darwin": "/Users/ynakaguchi/.config/nvim/init.vim",
-  "window.zoomLevel": 2,
   "workbench.view.alwaysShowHeaderActions": true,
   "shellcheck.ignoreFileSchemes": [
     "git",
     "gitfs",
     "json"
   ],
+  "window.zoomLevel": 2,
   
 }
