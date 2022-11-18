@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "xwmx/taps"
 
 brew "openssl@1.1", link: true
 brew "asdf"
@@ -44,6 +45,7 @@ brew "tmux"
 brew "tree"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
+brew "xwmx/taps/nb"
 
 cask "1password"
 cask "1password-cli"
