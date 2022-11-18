@@ -14,3 +14,5 @@
 ###############################################################################
 
 export NB_COLOR_THEME="${NB_COLOR_THEME:-utility}" # Set by `nb` • 2022年 11月18日 金曜日 13時54分32秒 JST
+
+export EDITOR="code" # Set by `nb` • 2022年 11月18日 金曜日 14時05分00秒 JST
