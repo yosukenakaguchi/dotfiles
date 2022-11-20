@@ -16,3 +16,9 @@
 export NB_COLOR_THEME="${NB_COLOR_THEME:-utility}" # Set by `nb` • 2022年 11月18日 金曜日 13時54分32秒 JST
 
 export EDITOR="code" # Set by `nb` • 2022年 11月18日 金曜日 14時05分00秒 JST
+
+export NB_SYNTAX_THEME="${NB_SYNTAX_THEME:-Nord}" # Set by `nb` • 2022年 11月18日 金曜日 15時03分18秒 JST
+
+export NB_COLOR_PRIMARY="${NB_COLOR_PRIMARY:-220}" # Set by `nb` • 2022年 11月18日 金曜日 15時06分03秒 JST
+
+export NB_COLOR_SECONDARY="${NB_COLOR_SECONDARY:-116}" # Set by `nb` • 2022年 11月18日 金曜日 15時10分25秒 JST
