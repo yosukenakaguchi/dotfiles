@@ -23,6 +23,7 @@ alias gf='git fetch'
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gbdall='git branch -D $(git branch)'
+alias gmc='gitmoji -c'
 alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
 # docker
