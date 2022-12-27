@@ -31,5 +31,8 @@
   "shellcheck.ignoreFileSchemes": ["git", "gitfs", "json"],
   "diffEditor.ignoreTrimWhitespace": false,
   "git.mergeEditor": false,
+  "git.enableSmartCommit": true,
+  "explorer.compactFolders": false,
+  "git.confirmSync": false,
   "window.zoomLevel": 2
 }
