@@ -56,6 +56,21 @@
     "args": "j"
   },
   {
+    "key": "space d",
+    "command": "editor.action.goToDeclaration",
+    "when": "neovim.mode == normal && editorTextFocus",
+  },
+  {
+    "key": "space b",
+    "command": "workbench.action.navigateBack",
+    "when": "neovim.mode == normal && editorTextFocus",
+  },
+  {
+    "key": "space h",
+    "command": "editor.action.showHover",
+    "when": "neovim.mode == normal && editorTextFocus",
+  },
+  {
     "key": "Enter",
     "command": "list.select",
     "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
