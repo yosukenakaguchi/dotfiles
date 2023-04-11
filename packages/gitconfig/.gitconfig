@@ -12,6 +12,6 @@
     allowed = AKIAIOSFODNN7EXAMPLE
     allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
-    templatedir = ~/.git-templates/secrets
+	templateDir = ~/.git-templates/git-secrets
 [push]
 	autoSetupRemote = true
