@@ -1,59 +1,20 @@
 [
   {
-    "key": "ctrl+a h",
-    "command": "workbench.action.focusLeftGroup",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+a l",
-    "command": "workbench.action.focusRightGroup",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+a j",
-    "command": "workbench.action.focusBelowGroup",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+a k",
-    "command": "workbench.action.focusAboveGroup",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+a shift+[IntlYen]",
-    "command": "workbench.action.splitEditor",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+a -",
-    "command": "workbench.action.splitEditorOrthogonal",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "workbench.view.explorer",
-    "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusSideBar",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusFirstEditorGroup",
-    "when": "!editorFocus"
+    "key": "shift+cmd+a",
+    "command": "copilot-labs.use-brush-picker",
+    "when": "editorTextFocus"
   },
   {
     "command": "vscode-neovim.compositeEscape1",
     "key": "j",
     "when": "neovim.mode == insert && editorTextFocus",
     "args": "j"
+  },
+  {
+    "command": "vscode-neovim.compositeEscape2",
+    "key": "k",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "k"
   },
   {
     "key": "space d",
@@ -69,60 +30,5 @@
     "key": "space h",
     "command": "editor.action.showHover",
     "when": "neovim.mode == normal && editorTextFocus",
-  },
-  {
-    "key": "Enter",
-    "command": "list.select",
-    "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
-  },
-  {
-    "key": "o",
-    "command": "list.select",
-    "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
-  },
-  {
-    "key": "Enter",
-    "command": "list.toggleExpand",
-    "when": "explorerViewletFocus && explorerViewletVisible && explorerResourceIsFolder && !inputFocus"
-  },
-  {
-    "key": "s",
-    "command": "explorer.openToSide",
-    "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
-  },
-  {
-    "key": "m r",
-    "command": "renameFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "m c",
-    "command": "filesExplorer.copy",
-    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "m p",
-    "command": "filesExplorer.paste",
-    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "m a",
-    "command": "explorer.newFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "m d",
-    "command": "deleteFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "m f",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "shift+cmd+a",
-    "command": "copilot-labs.use-brush-picker",
-    "when": "editorTextFocus"
   },
 ]
