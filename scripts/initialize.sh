@@ -1,7 +1,8 @@
 #!/bin/bash
 
 set -e
-source ./scripts/utils.sh
+# shellcheck disable=SC1091
+source "./scripts/utils.sh"
 
 if [ "$(uname)" != "Darwin" ]; then
   echo "Not macOS!"

@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
-source ./scripts/utils.sh
+# shellcheck disable=SC1091
+source "./scripts/utils.sh"
 
 HOME_DIR=$HOME
 STOW_PACKAGES_PATH="$(cd "$(dirname "$0")" && cd ../packages && pwd)"

@@ -1,10 +1,12 @@
 #!/bin/bash
 
 set -e
-source ./scripts/utils.sh
+# shellcheck disable=SC1091
+source "./scripts/utils.sh"
 
 export ASDF_HASHICORP_OVERWRITE_ARCH=amd64
 
+# shellcheck disable=SC2013
 for plugin in $(awk '{print $1}' ~/.tool-versions); do
   if ! is_dir ~/.asdf/plugins/"$plugin"; then
     asdf plugin add "$plugin"
