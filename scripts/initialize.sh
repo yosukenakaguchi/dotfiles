@@ -1,12 +1,7 @@
 #!/bin/bash
 
 set -e
-
-# Utils
-log() {
-  message=$1
-  echo 📌 "$message"
-}
+source ./scripts/utils.sh
 
 if [ "$(uname)" != "Darwin" ]; then
   echo "Not macOS!"

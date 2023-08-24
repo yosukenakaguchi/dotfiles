@@ -55,3 +55,7 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^G' peco-cdr
+
+alias mrun='grep -E "^[a-zA-Z0-9._-]+:" Makefile | awk -F: "{print $1}" | tr -d ":" | peco | xargs make'
+alias nrun='cat package.json | jq -r ".scripts | keys[]" | peco | xargs npm run'
+alias pnrun='cat package.json | jq -r ".scripts | keys[]" | peco | xargs pnpm run'

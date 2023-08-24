@@ -1,6 +1,6 @@
 PHONY: all
 all:
-	initialize brew-bundle brew-bundle-mas stow-packages @cmatrix
+	initialize brew-bundle brew-bundle-mas stow-packages asdf-plugins @cmatrix
 
 PHONY: initialize
 initialize:
@@ -19,6 +19,10 @@ brew-bundle-mas:
 brew-bundle-ci:
 	grep -Ev "awscli|cocoapods" ./packages/brewfiles/.Brewfile > ./packages/brewfiles/.Brewfile.ci
 	brew bundle --verbose --no-lock --file=./packages/brewfiles/.Brewfile.ci
+
+.PHONY: asdf-plugins
+asdf-plugins:
+	@./scripts/asdf_plugins.sh
 
 .PHONY: stow-packages
 stow-packages:

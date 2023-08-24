@@ -31,6 +31,15 @@ time_format = "%T"
 [aws]
 disabled = true
 
+[nodejs]
+disabled = true
+
+[ruby]
+disabled = true
+
+[dart]
+disabled = true
+
 [package]
 disabled = true
 

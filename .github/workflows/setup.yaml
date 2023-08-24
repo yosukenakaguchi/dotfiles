@@ -16,3 +16,6 @@ jobs:
 
       - name: check symbolic linking
         run: make stow-packages
+
+      - name: check asdf plugins installation
+        run: make asdf-plugins

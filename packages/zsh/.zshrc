@@ -7,4 +7,3 @@
 source $STOW_PACKAGES_PATH/zsh/.zsh/init.zsh
 source $STOW_PACKAGES_PATH/zsh/.zsh/alias.zsh
 source $STOW_PACKAGES_PATH/zsh/.zsh/history.zsh
-eval "$(rtx activate)"
