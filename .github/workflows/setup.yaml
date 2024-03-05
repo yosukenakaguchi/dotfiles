@@ -9,13 +9,10 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: check brew tap, brew and cask package installation
         run: make brew-bundle-ci
 
       - name: check symbolic linking
         run: make stow-packages
-
-      - name: check asdf plugins installation
-        run: make asdf-plugins

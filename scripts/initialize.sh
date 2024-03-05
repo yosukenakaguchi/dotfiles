@@ -22,7 +22,7 @@ xcode-select --install >/dev/null
 # Install Homebrew
 if [ ! -f /opt/homebrew/bin/brew ]; then
   log 'Setup Homebrew'
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" > /dev/null
 else
   log "Homebrew already installed."
 fi
