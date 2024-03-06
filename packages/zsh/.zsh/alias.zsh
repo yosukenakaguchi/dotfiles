@@ -32,8 +32,8 @@ alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
 # bat
 alias cat='bat -pP'
 
-# exa
-alias ls='exa'
+# lsd
+alias ls='lsd'
 
 # chage directory
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
