@@ -1,10 +1,5 @@
 [
   {
-    "key": "shift+cmd+a",
-    "command": "copilot-labs.use-brush-picker",
-    "when": "editorTextFocus"
-  },
-  {
     "command": "vscode-neovim.compositeEscape1",
     "key": "j",
     "when": "neovim.mode == insert && editorTextFocus",
@@ -19,16 +14,16 @@
   {
     "key": "space d",
     "command": "editor.action.goToDeclaration",
-    "when": "neovim.mode == normal && editorTextFocus",
+    "when": "neovim.mode == normal && editorTextFocus"
   },
   {
     "key": "space b",
     "command": "workbench.action.navigateBack",
-    "when": "neovim.mode == normal && editorTextFocus",
+    "when": "neovim.mode == normal && editorTextFocus"
   },
   {
     "key": "space h",
     "command": "editor.action.showHover",
-    "when": "neovim.mode == normal && editorTextFocus",
-  },
+    "when": "neovim.mode == normal && editorTextFocus"
+  }
 ]

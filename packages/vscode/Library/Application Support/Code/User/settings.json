@@ -3,36 +3,80 @@
   "editor.cursorStyle": "block",
   "editor.minimap.enabled": false,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": false,
-  "editor.formatOnType": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": [
-    "source.organizeImports",
-    "source.fixAll.eslint"
-  ],
-  "shellcheck.executablePath": "/Users/ynakaguchi/dotfiles/scripts/shellcheck.sh",
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "settingsSync.ignoredSettings": ["-shellcheck.executablePath"],
+  "editor.formatOnSave": true,
   "[properties]": {
     "editor.formatOnSave": false
   },
-  "ruby.intellisense": "rubyLocate",
-  "ruby.codeCompletion": "rcodetools",
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "workbench.colorTheme": "One Monokai",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Tokyo Night",
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-  "vscode-neovim.revealCursorScrollLine": false,
-  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/ynakaguchi/.config/nvim/init.vim",
   "workbench.view.alwaysShowHeaderActions": true,
-  "shellcheck.ignoreFileSchemes": ["git", "gitfs", "json"],
-  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.compactFolders": false,
+  "window.zoomLevel": 2,
+  "git.openRepositoryInParentFolders": "always",
   "git.mergeEditor": false,
   "git.enableSmartCommit": true,
-  "explorer.compactFolders": false,
   "git.confirmSync": false,
-  "window.zoomLevel": 2
+  "githubPullRequests.pullBranch": "never",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true
+  },
+  "[ruby]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rubocop.vscode-rubocop"
+  },
+  "solargraph.useBundler": false,
+  "solargraph.diagnostics": true,
+  "solargraph.formatting": false,
+  "rubocop.autocorrect": true,
+  "rubocop.yjitEnabled": true,
+  "rubocop.lintMode": true,
+  "rubocop.mode": "onlyRunGlobally",
+  "rubocop.layoutMode": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.revealCursorScrollLine": false,
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/ynakaguchi/.config/nvim/init.lua",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "markdown.marp.pdf.noteAnnotations": true,
+  "cSpell.userWords": [
+    "asvetliakov",
+    "autocorrect",
+    "foxundermoon",
+    "gitfs",
+    "marp",
+    "Monokai",
+    "neovim",
+    "nvim",
+    "rubocop",
+    "scminput",
+    "shellcheck",
+    "solargraph",
+    "yjit",
+    "ynakaguchi"
+  ]
 }
