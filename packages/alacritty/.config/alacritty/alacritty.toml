@@ -79,10 +79,6 @@ key = "Minus"
 mods = "Command|Shift"
 
 [[keyboard.bindings]]
-chars = "¥"
-key = "Yen"
-
-[[keyboard.bindings]]
 chars = '\'
 key = "Backslash"
 mods = "Alt"
