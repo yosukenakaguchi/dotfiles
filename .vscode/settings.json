@@ -1,4 +1,3 @@
 {
-  "shellcheck.executablePath": "/Users/ynakaguchi/dotfiles/scripts/shellcheck.sh",
-  "cSpell.words": ["esbenp"]
+  "shellcheck.executablePath": "/Users/ynakaguchi/dotfiles/scripts/shellcheck.sh"
 }
