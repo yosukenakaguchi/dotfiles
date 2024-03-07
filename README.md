@@ -3,7 +3,7 @@
 
 # dotfiles
 
-This dotfiles for macOS are managed with [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle), [GNU stow](https://www.gnu.org/software/stow/) and [asdf](https://asdf-vm.com/).
+This dotfiles for macOS are managed with [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle), [GNU stow](https://www.gnu.org/software/stow/).
 
 - Shell: Z shell
 - Terminal: [Alacritty](https://alacritty.org/) with [tmux](https://github.com/tmux/tmux) and [Starship](https://starship.rs/)
