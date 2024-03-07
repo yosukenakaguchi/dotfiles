@@ -10,3 +10,9 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# temp ignore for WIP
+packages/skhd/*
+packages/yabai/*
+packages/sketchybar/*
+scripts/macos_defaults.sh
