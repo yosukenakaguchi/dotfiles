@@ -1,4 +1,3 @@
-[![Installation and Setup Check](https://github.com/yosukenakaguchi/dotfiles/actions/workflows/setup.yaml/badge.svg)](https://github.com/yosukenakaguchi/dotfiles/actions/workflows/setup.yaml)
 [![Shellcheck](https://github.com/yosukenakaguchi/dotfiles/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/yosukenakaguchi/dotfiles/actions/workflows/shellcheck.yaml)
 
 # dotfiles
