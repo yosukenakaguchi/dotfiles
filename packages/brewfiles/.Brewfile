@@ -1,12 +1,11 @@
 tap "1password/tap"
 tap "homebrew/bundle"
-# tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-# tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "FelixKratz/formulae"
+tap "lencx/chatgpt", "https://github.com/lencx/chatgpt.git"
 
 brew "openssl@3"
 brew "openssl@1.1", link: true
@@ -67,6 +66,7 @@ cask "alfred"
 cask "android-studio"
 cask "appcleaner"
 cask "aws-vault"
+cask "chatgpt", args: { "no-quarantine": true }
 cask "cursor"
 cask "deepl"
 cask "docker"
