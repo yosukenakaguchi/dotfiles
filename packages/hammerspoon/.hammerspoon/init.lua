@@ -1,8 +1,8 @@
 hs.hotkey.bind({"alt"}, "space", function()
-  local alacritty = hs.application.find('alacritty')
-  if alacritty:isFrontmost() then
-    alacritty:hide()
+  local ghostty = hs.application.find('ghostty')
+  if ghostty:isFrontmost() then
+    ghostty:hide()
   else
-    hs.application.launchOrFocus("/Applications/Alacritty.app")
+    hs.application.launchOrFocus("/Applications/Ghostty.app")
   end
 end)

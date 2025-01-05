@@ -1,3 +1,12 @@
 {
-  "recommendations": ["timonwong.shellcheck"]
+  "recommendations": [
+    "timonwong.shellcheck",
+    "asvetliakov.vscode-neovim",
+    "foxundermoon.shell-format",
+    "davidanson.vscode-markdownlint",
+    "hashicorp.terraform",
+    "biomejs.biome",
+    "esbenp.prettier-vscode",
+    "azemoh.one-monokai"
+  ]
 }

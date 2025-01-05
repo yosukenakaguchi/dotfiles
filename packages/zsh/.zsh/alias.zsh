@@ -35,6 +35,15 @@ alias cat='bat -pP'
 # lsd
 alias ls='lsd'
 
+# cursor
+alias c='cursor'
+
+# dotfiles
+alias dot='cursor ~/dotfiles'
+
+# obsidian
+alias ob='cursor ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Obsidian-iCloud'
+
 # chage directory
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
   autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
@@ -56,6 +65,25 @@ function peco-cdr () {
 zle -N peco-cdr
 bindkey '^G' peco-cdr
 
-alias mrun='grep -E "^[a-zA-Z0-9._-]+:" Makefile | awk -F: "{print $1}" | tr -d ":" | peco | xargs make'
-alias nrun='cat package.json | jq -r ".scripts | keys[]" | peco | xargs npm run'
-alias pnrun='cat package.json | jq -r ".scripts | keys[]" | peco | xargs pnpm run'
+function select-task () {
+  if [ -f "Taskfile.yml" ]; then
+    task_name=$(task -a --json | jq -r '.tasks[].name' | peco)
+  elif [ -f "turbo.json" ]; then
+    task_name=$(cat turbo.json | jq -r '.tasks | keys[]' | peco)
+  else
+    echo "Taskfile.yml または turbo.json が見つかりません"
+    return 1
+  fi
+
+  if [ -n "$task_name" ]; then
+    if [ -f "Taskfile.yml" ]; then
+      BUFFER="task $task_name"
+    else
+      BUFFER="pnpm run $task_name"
+    fi
+    CURSOR=$#BUFFER
+    zle reset-prompt
+  fi
+}
+zle -N select-task
+bindkey '^T' select-task

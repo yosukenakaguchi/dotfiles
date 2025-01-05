@@ -1,0 +1,14 @@
+version: "3"
+
+tasks:
+  brew.bundle:
+    cmds:
+      - brew bundle --verbose --no-lock --file=./packages/brewfiles/.Brewfile
+
+  brew.cleanup:
+    cmds:
+      - brew bundle --verbose --force cleanup --file=./packages/brewfiles/.Brewfile
+
+  stow.link:
+    cmds:
+      - ./scripts/stow_packages.sh

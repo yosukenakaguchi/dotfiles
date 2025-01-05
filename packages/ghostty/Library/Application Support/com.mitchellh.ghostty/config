@@ -1,0 +1,8 @@
+theme = nord
+macos-titlebar-proxy-icon = hidden
+
+window-save-state = always
+
+fullscreen = true
+window-inherit-working-directory = true
+resize-overlay = never
