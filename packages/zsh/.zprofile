@@ -9,3 +9,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Added by OrbStack: command-line tools and integration
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
+source /opt/homebrew/share/google-cloud-sdk/completion.zsh.inc
+source /opt/homebrew/share/google-cloud-sdk/path.zsh.inc
