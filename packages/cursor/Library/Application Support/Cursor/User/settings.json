@@ -118,5 +118,6 @@
   ],
   "workbench.activityBar.orientation": "vertical",
   "files.insertFinalNewline": true,
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "hediet.vscode-drawio.resizeImages": null
 }
