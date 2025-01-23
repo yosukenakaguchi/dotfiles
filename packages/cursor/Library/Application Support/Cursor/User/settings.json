@@ -11,7 +11,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
-    "source.fixAll.eslint": "explicit"
+    "source.organizeImports": "explicit",
+    "source.addMissingImports": "explicit"
   },
   "editor.quickSuggestions": {
     "strings": true
@@ -79,7 +80,7 @@
   },
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "vscode-neovim.revealCursorScrollLine": false,
-  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/ynakaguchi/.config/nvim/init.lua",
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/y_nakaguchi/.config/nvim/init.lua",
   "vscode-neovim.compositeKeys": {
     "jj": {
       "command": "vscode-neovim.escape"

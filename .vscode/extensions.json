@@ -8,6 +8,10 @@
     "biomejs.biome",
     "esbenp.prettier-vscode",
     "azemoh.one-monokai",
-    "hediet.vscode-drawio"
+    "hediet.vscode-drawio",
+    "dsznajder.es7-react-js-snippets",
+    "bradlc.vscode-tailwindcss",
+    "yoavbls.pretty-ts-errors",
+    "streetsidesoftware.code-spell-checker"
   ]
 }
