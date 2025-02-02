@@ -13,5 +13,6 @@
     allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
 	templateDir = ~/.git-templates/git-secrets
+	defaultBranch = main
 [push]
 	autoSetupRemote = true
