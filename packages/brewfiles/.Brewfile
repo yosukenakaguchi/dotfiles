@@ -55,6 +55,7 @@ brew "stow"
 brew "terminal-notifier"
 brew "tflint"
 brew "tree"
+brew "uv"
 brew "vercel-cli"
 brew "yabai"
 
