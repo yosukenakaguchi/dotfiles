@@ -3,7 +3,7 @@ version: "3"
 tasks:
   brew.bundle:
     cmds:
-      - brew bundle --verbose --no-lock --file=./packages/brewfiles/.Brewfile
+      - brew bundle --verbose --file=./packages/brewfiles/.Brewfile
 
   brew.cleanup:
     cmds:
