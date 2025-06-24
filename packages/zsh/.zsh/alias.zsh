@@ -38,6 +38,12 @@ alias ls='lsd'
 # cursor
 alias c='cursor'
 
+# claude
+alias cc="claude"
+alias ccc="claude --continue"
+alias ccr="claude --resume"
+alias yolo="claude —-dangerously-skip-permissions"
+
 # dotfiles
 alias dot='cursor ~/dotfiles'
 
@@ -66,17 +72,32 @@ zle -N peco-cdr
 bindkey '^G' peco-cdr
 
 function select-task () {
+  local tasks=()
+  
   if [ -f "Taskfile.yml" ]; then
-    task_name=$(task -a --json | jq -r '.tasks[].name' | peco)
-  elif [ -f "turbo.json" ]; then
-    task_name=$(cat turbo.json | jq -r '.tasks | keys[]' | peco)
-  else
+    while IFS= read -r task; do
+      tasks+=("task: $task")
+    done < <(task -a --json | jq -r '.tasks[].name')
+  fi
+  
+  if [ -f "turbo.json" ]; then
+    while IFS= read -r task; do
+      tasks+=("turbo $task")
+    done < <(cat turbo.json | jq -r '.tasks | keys[]')
+  fi
+  
+  if [ ${#tasks[@]} -eq 0 ]; then
     echo "Taskfile.yml または turbo.json が見つかりません"
     return 1
   fi
-
-  if [ -n "$task_name" ]; then
-    if [ -f "Taskfile.yml" ]; then
+  
+  local selected=$(printf '%s\n' "${tasks[@]}" | peco)
+  
+  if [ -n "$selected" ]; then
+    local prefix=$(echo "$selected" | cut -d: -f1)
+    local task_name=$(echo "$selected" | cut -d' ' -f2-)
+    
+    if [ "$prefix" = "task" ]; then
       BUFFER="task $task_name"
     else
       BUFFER="pnpm run $task_name"
