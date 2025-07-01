@@ -13,5 +13,22 @@
     "key": "space h",
     "command": "editor.action.showHover",
     "when": "neovim.mode == normal && editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "lazygit-vscode.toggle"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-lazygit-vscode.toggle"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "shift+cmd+[Equal]",
+    "command": "claude-code.runClaude",
+    "when": "claude-code.hasClaudeInPath"
   }
 ]
