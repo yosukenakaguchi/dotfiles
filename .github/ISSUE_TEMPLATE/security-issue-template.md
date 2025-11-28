@@ -1,7 +1,7 @@
 ---
 name: Security issue template
-about: Describe this issue template's purpose here.
-title: ''
+about: Report a security vulnerability or security-related concern
+title: "[SECURITY]"
 labels: ''
 assignees: ''
 
