@@ -16,19 +16,22 @@
   },
   {
     "key": "shift+cmd+g",
-    "command": "lazygit-vscode.toggle"
-  },
-  {
-    "key": "shift+cmd+l",
-    "command": "-lazygit-vscode.toggle"
-  },
-  {
-    "key": "cmd+i",
-    "command": "composerMode.agent"
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "lazygit-vscode.toggle",
+        "lazygitFocus"
+      ]
+    }
   },
   {
     "key": "shift+cmd+[Equal]",
     "command": "claude-code.runClaude",
     "when": "claude-code.hasClaudeInPath"
+  },
+  {
+    "key": "ctrl+cmd+c",
+    "command": "copyRelativeFilePath",
+    "when": "editorFocus"
   }
 ]
